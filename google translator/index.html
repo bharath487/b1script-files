@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+        }
+        nav {
+            background-color: brown;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .about-us {
+
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .bha {
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>One Page Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="service.html">Services</a>
+    </nav>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem numquam distinctio a. Vel voluptatum ullam nulla? Excepturi perspiciatis possimus reiciendis fuga ut tempora in inventore sit, sed cum qui.</p>
+        <a class="bha" href="#">Our Team</a>
+    </section>
+
+    <p id="demo"></p>
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: "en" },"demo");
+        }
+    </script>
+</body>
+</html>
